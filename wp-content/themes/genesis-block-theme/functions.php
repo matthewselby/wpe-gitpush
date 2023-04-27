@@ -1,4 +1,7 @@
 <?php
+
+// I'm a new comment to track
+
 /**
  * Genesis Block Theme functions and definitions
  *
