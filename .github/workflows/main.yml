@@ -1,16 +1,17 @@
-name: Deploy to a WP Engine Development environment
+name: Deploy to WPE 
 on:
-push:
-branches:
-- dev
+    workflow_dispatch:
 jobs:
-build:
-runs-on: ubuntu-latest
-steps:
-- uses: actions/checkout@v3
-- name: GitHub Action Deploy to WP Engine
-uses: wpengine/github-action-wpe-site-deploy@v3
-with:
-REMOTE_PATH: "wp-content/"
-WPE_SSHG_KEY_PRIVATE: ${{ secrets.WPE_SSHG_KEY_PRIVATE }}
-WPE_ENV: legalsimplidev
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: GitHub Action Deploy to WP Engine
+      uses: wpengine/github-action-wpe-site-deploy@v3
+      with:
+      # Deploy vars
+        WPE_SSHG_KEY_PRIVATE: ${{ secrets.WPE_SSHG_KEY_PRIVATE }}
+        WPE_ENV: mattselbywpe
+        # Deploy Options
+        SRC_PATH: "wp-content/themes/genesis-block-theme/"
+        REMOTE_PATH: "wp-content/themes/genesis-block-theme/"
