@@ -15,3 +15,4 @@ jobs:
         # Deploy Options
         SRC_PATH: "wp-content/themes/genesis-block-theme/"
         REMOTE_PATH: "wp-content/themes/genesis-block-theme/"
+        FLAGS: -azvr --inplace --delete --exclude=".*"
