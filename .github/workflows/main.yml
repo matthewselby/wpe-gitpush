@@ -15,4 +15,4 @@ jobs:
         # Deploy Options
         SRC_PATH: "wp-content/themes/genesis-block-theme/"
         REMOTE_PATH: "wp-content/themes/genesis-block-theme/"
-        FLAGS: -azvr --inplace --delete --exclude=*.txt --exclude="*.php" --exclude *.css --exclude "*.woff" --exclude=single.php --exclude="index.php" --exclude "footer.php"
+        FLAGS: -azvr --inplace --delete --exclude=*.txt --exclude="*.php" --exclude *.css --exclude "*.woff" --exclude=single.php --exclude="index.php" --exclude page.php --exclude "footer.php" --exclude-from=ignorefile.txt
