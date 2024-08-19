@@ -13,6 +13,6 @@ jobs:
         WPE_SSHG_KEY_PRIVATE: ${{ secrets.WPE_SSHG_KEY_PRIVATE }}
         WPE_ENV: mattselbywpe
         # Deploy Options
-        SRC_PATH: "wp-content/themes/genesis-block-theme/"
-        REMOTE_PATH: "wp-content/themes/genesis-block-theme/"
-        FLAGS: -azvr --inplace --delete --exclude=inc/fonts
+        # SRC_PATH: "wp-content/themes/genesis-block-theme/"
+        # REMOTE_PATH: "wp-content/themes/genesis-block-theme/"
+        FLAGS: -azvr --inplace --delete --exclude-from=.deployignore
