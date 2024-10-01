@@ -1,12 +1,12 @@
-# ignore everything
-/**
+### ignore everything
+#/**
 
-# special one-off things to keep
-!/.gitignore
+### special one-off things to keep
+#!/.gitignore
 
-# WP stuffs
-!/wp-content/
-/wp-content/**
-!/wp-content/themes/
-/wp-content/themes/**
-!/wp-content/themes/genesis-block-theme/
+### WP stuffs
+# !/wp-content/
+# /wp-content/**
+# !/wp-content/themes/
+# /wp-content/themes/**
+# !/wp-content/themes/genesis-block-theme/
